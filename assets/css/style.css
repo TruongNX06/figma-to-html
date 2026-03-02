@@ -20,7 +20,6 @@ header {
   /* #fffcf4 */
 }
 .btn {
-  display: block;
   min-width: 118px;
   text-align: center;
   border-radius: 30px;
@@ -142,7 +141,7 @@ header {
   align-items: center;
 }
 .hero .btn-see-courses {
-  background-color: orange;
+  background-color: rgb(240, 176, 40);
   width: 180px;
   height: 60px;
   display: flex;
@@ -160,7 +159,7 @@ header {
   width: 40px;
   height: 40px;
   display: flex;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 40px;
   margin-left: 20px;
   justify-content: center;
@@ -185,4 +184,107 @@ header {
 }
 .hero .content-block strong:nth-child(2) {
   margin-left: 30px;
+}
+
+/* phần popular */
+.popular {
+  margin: 150px 0;
+}
+.popular .body {
+  position: relative;
+  /* background-color: rgb(209, 215, 241); */
+}
+.popular h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.popular .direction {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.popular .direction .chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb900;
+  border-radius: 40px;
+}
+.popular .end .btn-book-now:hover,
+.popular .chevron:hover {
+  background-color: #ffb900;
+  color: #fff;
+}
+.popular .direction .direction-right {
+  margin-left: 20px;
+}
+.popular .direction span {
+  color: #ffb900;
+}
+.popular .body p:nth-child(3) {
+  margin-top: 25px;
+}
+.popular .body > p {
+  margin-top: 20px;
+  width: 458px;
+  line-height: 30px;
+  font-size: 1.8rem;
+  color: #5f5b53;
+}
+
+.popular_center {
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+.popular_center .box {
+  width: 370px;
+}
+.popular_center .img {
+  width: 370px;
+  height: 278px;
+}
+.popular_center .detail {
+  margin: 10px;
+}
+.popular_center .start,
+.end {
+  display: flex;
+  font-weight: 600;
+}
+
+.popular_center .rate {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+.popular_center .rate .icon {
+  margin-right: 5px;
+}
+.popular_center .rate span {
+  color: #ffb900;
+}
+.popular_center .desc {
+  margin-top: 10px;
+  line-height: 28px;
+  color: #5f5b53;
+}
+.popular .end {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.popular .end .btn-book-now {
+  color: white;
+  margin-left: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
