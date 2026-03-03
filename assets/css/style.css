@@ -1092,6 +1092,9 @@ header {
   width: 100%;
   height: 250px;
 }
+.blog-list .info {
+  margin-left: 10px;
+}
 .blog-list .date {
   display: flex;
   align-items: center;
@@ -1124,7 +1127,7 @@ header {
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin: 10px 0 30px 20px;
+  margin: 20px 0 30px 0;
 }
 .blog-list .btn-read-more:hover {
   background-color: #ffb900;
@@ -1133,6 +1136,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
   /* font-size:30px; */
   /* kế thừa */
 }
@@ -1141,4 +1145,65 @@ header {
 }
 .blog .dots .dot.active {
   color: #ffb900;
+}
+
+/* phần footer */
+.footer {
+  background-color: #2e2100;
+  padding-top: 1px;
+}
+.ft-body {
+  /* background-color: grey; */
+  margin-top: 60px;
+}
+.ft-body .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ft-body h1 {
+  font-size: 1.6rem;
+}
+.ft-body p {
+  color: #807d74;
+  font-size: 1.4rem;
+  line-height: 26px;
+  /* margin-top: 10px; */
+}
+.ft-body .box1 {
+  width: 267px;
+}
+.ft-body img {
+  background-color: #2e2100;
+}
+.ft-body .fa-brands {
+  margin-top: 10px;
+}
+.ft-body .box2 {
+  width: 130px;
+}
+.ft-body .box3 {
+  width: 137px;
+}
+.ft-body .box4 {
+  width: 231px;
+}
+
+.ft-body .box hr {
+  color: #59554b;
+  margin-top: 10px;
+  width: 130px;
+  margin-left: 0;
+}
+.ft-body .box + hr {
+  margin-top: 30px;
+}
+.ft-body .light,
+.ft-body .fa-brands {
+  color: #fff;
+}
+
+.ft-body hr + p:last-child {
+  text-align: center;
+  padding: 20px 0;
 }
