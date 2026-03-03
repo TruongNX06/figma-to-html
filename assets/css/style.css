@@ -990,7 +990,7 @@ header {
   font-size: var(--fix-font);
   font-size: 3.8rem;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 10px;
   letter-spacing: -2%;
   line-height: 48px;
 }
@@ -1051,4 +1051,94 @@ header {
   width: 40%;
   height: 440px;
   margin-left: auto;
+}
+
+/* phần blog */
+.blog {
+  margin-top: 150px;
+  background-color: #fffcf4;
+  padding-top: 1px;
+}
+.blog .body {
+}
+.blog .title {
+  margin: 50px auto 20px;
+}
+.blog .title h1 {
+  font-family: var(--fix-font);
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 auto;
+}
+.blog .title p {
+  width: 448px;
+  font-size: 1.6rem;
+  line-height: 28px;
+  text-align: center;
+  margin: 10px auto 0;
+}
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.blog-list .box {
+  width: 31.6%;
+  background-color: rgb(255, 255, 255);
+}
+.blog-list img {
+  width: 100%;
+  height: 250px;
+}
+.blog-list .date {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 15px;
+}
+.blog-list hr {
+  width: 50%;
+  margin-left: 0;
+  color: #e2dfda;
+}
+.blog-list .icon {
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+}
+
+.blog-list .date p {
+  color: #5f5b53;
+}
+.blog-list .desc {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+.blog-list .btn-read-more {
+  width: 118px;
+  height: 50px;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 10px 0 30px 20px;
+}
+.blog-list .btn-read-more:hover {
+  background-color: #ffb900;
+}
+.blog .body .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size:30px; */
+  /* kế thừa */
+}
+.blog .dots .dot {
+  font-size: 30px;
+}
+.blog .dots .dot.active {
+  color: #ffb900;
 }
