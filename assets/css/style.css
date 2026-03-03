@@ -288,3 +288,664 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+/* phần feedback */
+.fb-body {
+  background-color: rgb(209, 215, 241);
+  display: flex;
+}
+.fb-body .info {
+  width: 13.6%;
+}
+.fb-body .info .img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fix-font: "Sen", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ================common=============== */
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #fffcf4;
+  /* #fffcf4 */
+}
+.btn {
+  min-width: 118px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: black;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ================header================*/
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -22px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  padding: 8px 21px;
+  color: rgb(150, 115, 115);
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 900px; */
+  text-shadow: 1px 0 0 black;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 2px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+
+  background-color: black;
+}
+.header .btn-sign-up {
+  width: 137px;
+  padding: 20px;
+
+  color: white;
+
+  margin-left: 21px;
+}
+
+/* phần hero */
+.hero {
+  padding-top: 40px;
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  width: 48.7%;
+  display: flex;
+  position: relative;
+  /* background-color: rgb(152, 107, 107); */
+}
+.hero .img {
+  width: 470px;
+}
+.hero-summary {
+  position: absolute;
+  width: 270px;
+  right: 0;
+  bottom: 20px;
+  background-color: #fff;
+}
+.hero-summary .item {
+  display: flex;
+
+  align-items: center;
+}
+.hero .icon {
+  padding-left: 10px;
+}
+.hero .info {
+  padding-left: 20px;
+}
+.hero .content-block {
+  width: 51.2%;
+  padding-top: 64px;
+  padding-left: 130px;
+
+  background-color: #fffcf4;
+}
+
+.hero .heading {
+  font-family: var(--fix-font);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 68px;
+  letter-spacing: -2%;
+}
+.hero .desc {
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.hero .group-two {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.hero .btn-see-courses {
+  background-color: rgb(240, 176, 40);
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero button {
+  justify-content: center;
+  background-color: #fffcf4;
+  align-items: center;
+  display: flex;
+  border: none;
+}
+.hero .group-two .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 40px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .group-two span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+.hero .content-block p {
+  padding-top: 30px;
+}
+.hero .content-block strong {
+  font-weight: 700;
+  font-size: 4.4rem;
+}
+.hero .content-block strong {
+  margin-right: 20px;
+}
+.hero .content-block strong:nth-child(2) {
+  margin-left: 30px;
+}
+
+/* phần popular */
+.popular {
+  margin: 150px 0;
+}
+.popular .body {
+  position: relative;
+  /* background-color: rgb(209, 215, 241); */
+}
+.popular h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.popular .direction {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.popular .direction .chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb900;
+  border-radius: 40px;
+}
+.popular .end .btn-book-now:hover,
+.popular .chevron:hover {
+  background-color: #ffb900;
+  color: #fff;
+}
+.popular .direction .direction-right {
+  margin-left: 20px;
+}
+.popular .direction span {
+  color: #ffb900;
+}
+.popular .body p:nth-child(3) {
+  margin-top: 25px;
+}
+.popular .body > p {
+  margin-top: 20px;
+  width: 458px;
+  line-height: 30px;
+  font-size: 1.8rem;
+  color: #5f5b53;
+}
+
+.popular_center {
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+.popular_center .box {
+  width: 370px;
+}
+.popular_center .img {
+  width: 370px;
+  height: 278px;
+}
+.popular_center .detail {
+  margin: 10px;
+}
+.popular_center .start,
+.end {
+  display: flex;
+  font-weight: 600;
+}
+
+.popular_center .rate {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+.popular_center .rate .icon {
+  margin-right: 5px;
+}
+.popular_center .rate span {
+  color: #ffb900;
+}
+.popular_center .desc {
+  margin-top: 10px;
+  line-height: 28px;
+  color: #5f5b53;
+}
+.popular .end {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.popular .end .btn-book-now {
+  color: white;
+  margin-left: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* phần feedback */
+.fb-body {
+  background-color: rgb(209, 215, 241);
+  display: flex;
+}
+.fb-body .info {
+  width: 13.6%;
+}
+.fb-body .info .img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fix-font: "Sen", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ================common=============== */
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #fffcf4;
+  /* #fffcf4 */
+}
+.btn {
+  min-width: 118px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: black;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ================header================*/
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -22px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  padding: 8px 21px;
+  color: rgb(150, 115, 115);
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 900px; */
+  text-shadow: 1px 0 0 black;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 2px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+
+  background-color: black;
+}
+.header .btn-sign-up {
+  width: 137px;
+  padding: 20px;
+
+  color: white;
+
+  margin-left: 21px;
+}
+
+/* phần hero */
+.hero {
+  padding-top: 40px;
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  width: 48.7%;
+  display: flex;
+  position: relative;
+  /* background-color: rgb(152, 107, 107); */
+}
+.hero .img {
+  width: 470px;
+}
+.hero-summary {
+  position: absolute;
+  width: 270px;
+  right: 0;
+  bottom: 20px;
+  background-color: #fff;
+}
+.hero-summary .item {
+  display: flex;
+
+  align-items: center;
+}
+.hero .icon {
+  padding-left: 10px;
+}
+.hero .info {
+  padding-left: 20px;
+}
+.hero .content-block {
+  width: 51.2%;
+  padding-top: 64px;
+  padding-left: 130px;
+
+  background-color: #fffcf4;
+}
+
+.hero .heading {
+  font-family: var(--fix-font);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 68px;
+  letter-spacing: -2%;
+}
+.hero .desc {
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.hero .group-two {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.hero .btn-see-courses {
+  background-color: rgb(240, 176, 40);
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero button {
+  justify-content: center;
+  background-color: #fffcf4;
+  align-items: center;
+  display: flex;
+  border: none;
+}
+.hero .group-two .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 40px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .group-two span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+.hero .content-block p {
+  padding-top: 30px;
+}
+.hero .content-block strong {
+  font-weight: 700;
+  font-size: 4.4rem;
+}
+.hero .content-block strong {
+  margin-right: 20px;
+}
+.hero .content-block strong:nth-child(2) {
+  margin-left: 30px;
+}
+
+/* phần popular */
+.popular {
+  margin: 150px 0;
+}
+.popular .body {
+  position: relative;
+  /* background-color: rgb(209, 215, 241); */
+}
+.popular h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.popular .direction {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+
+.popular .direction .chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb900;
+  border-radius: 40px;
+}
+.popular .end .btn-book-now:hover,
+.popular .chevron:hover {
+  background-color: #ffb900;
+  color: #fff;
+}
+.popular .direction .direction-right {
+  margin-left: 20px;
+}
+.popular .direction span {
+  color: #ffb900;
+}
+.popular .body p:nth-child(3) {
+  margin-top: 25px;
+}
+.popular .body > p {
+  margin-top: 20px;
+  width: 458px;
+  line-height: 30px;
+  font-size: 1.8rem;
+  color: #5f5b53;
+}
+
+.popular_center {
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+.popular_center .box {
+  width: 370px;
+}
+.popular_center .img {
+  width: 370px;
+  height: 278px;
+}
+.popular_center .detail {
+  margin: 10px;
+}
+.popular_center .start,
+.end {
+  display: flex;
+  font-weight: 600;
+}
+
+.popular_center .rate {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+.popular_center .rate .icon {
+  margin-right: 5px;
+}
+.popular_center .rate span {
+  color: #ffb900;
+}
+.popular_center .desc {
+  margin-top: 10px;
+  line-height: 28px;
+  color: #5f5b53;
+}
+.popular .end {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.popular .end .btn-book-now {
+  color: white;
+  margin-left: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* phần feedback */
+.feedback {
+  background-color: #2e2100;
+  padding: 70px 0;
+}
+.fb-body {
+  display: flex;
+  background-color: #2e2100;
+}
+.fb-body .info {
+  width: 13.6%;
+}
+.fb-body .info .img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+.fb-body .member-name {
+  color: #f7f7f7;
+  margin-top: 10px;
+}
+.fb-body p {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 16px;
+  margin-top: 10px;
+}
+.fb-body .dots {
+  display: flex;
+}
+.fb-body .dot {
+  color: #634700;
+  justify-content: center;
+  width: 6px;
+  height: 6px;
+  font-size: 30px;
+}
+.fb-body .dot.active {
+  color: rgb(252, 211, 5);
+  width: 6px;
+  height: 6px;
+  font-size: px;
+}
+.fb-body .detail {
+  width: 65.8%;
+  margin-left: auto;
+}
+.fb-body .detail p {
+  font-size: 2.6rem;
+  line-height: 40px;
+  font-style: italic;
+}
